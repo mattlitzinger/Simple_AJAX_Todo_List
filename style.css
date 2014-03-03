@@ -1,0 +1,85 @@
+@import "css/reset.css";
+@import "css/normalize.css";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body { 
+	font: normal 14px 'Open Sans', Arial, sans-serif;
+	color: #999;
+	background: #f1f1f1;
+}
+
+.wrap {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.task-list {
+	width: 88%;
+	min-height: 300px;
+	background: #fff;
+	box-shadow: 2px 2px 0px #ddd;
+	margin-top: 40px;
+	padding: 22px 6%;
+}
+
+.task-list li {
+	font-size: 1.2em;
+	padding: 8px 0;
+	overflow: hidden;
+}
+
+.task-list li span {
+	width: 86%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+}
+
+.task-list li .delete-button {
+	width: 10px;
+	height: auto;
+	padding-top: 7px;
+	float: right;
+	vertical-align: top;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.task-list li .delete-button:hover {
+	opacity: 0.85;
+}
+
+.add-new-task {
+	margin-top: 20px;
+	padding-bottom: 60px;
+}
+
+.add-new-task input[type='text'] {
+	width: 100%;
+	font: normal 1.2em 'Open Sans', Arial, sans-serif;
+	color: #999;
+	box-shadow: 2px 2px 0px #ddd;
+	border: none;
+	border-radius: none;
+	display: block;
+	padding: 12px 6%;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+:focus {
+	outline: 0;
+}
+
+@media all and (max-width: 425px) {
+	.wrap {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
